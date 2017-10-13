@@ -1,14 +1,21 @@
 {
     "name": "MiddReg",
     "dependencies": {
+        "bootstrap": "^3.3.7",
         "electron": "^1.8.1"
     },
     "scripts": {
-        "start": "electron ."
+        "start": "npm run build && electron .",
+        "build": "node-sass --include-path scss scss/index.scss public/css/index.css"
     },
     "main": "main.js",
     "version": "0.0.1",
     "license": "MIT",
     "description": "Course registration tool for Middlebury College Bannerweb system",
-    "author": "Tao Peter Wang"
+    "author": "Tao Peter Wang",
+    "devDependencies": {
+        "compass": "^0.1.1",
+        "node-sass": "^4.5.3",
+        "nodemon": "^1.12.1"
+    }
 }

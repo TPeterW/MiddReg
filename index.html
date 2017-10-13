@@ -2,13 +2,35 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Tao Peter Wang">
     <title>MiddReg (Author: Tao Peter Wang)</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
   <body>
-    <div class="class-title">MiddReg</div>
+    <div class="jumbotron">
+      <h3 class="app-title">MiddReg</h3> 
+    </div>
+
+    <div id="input-area">
+        <div class="input-group">
+          <div class="input-group-addon" id="addon-student-id">ID: 00</div>
+          <input type="text" class="form-control" placeholder="6 Digit ID" aria-label="ID" aria-describedby="addon-student-id">
+        </div>
+        <div class="input-group">
+            <div class="input-group-addon" id="addon-password">Password</div>
+            <input type="text" class="form-control" placeholder="Password" aria-label="Passwd" aria-describedby="addon-password">
+          </div>
+    </div>
+
+    <div class="footer navbar-fixed-bottom">
+      <div class="container text-right">
+      <p id="debug-info" class="text-muted">Node: <script>document.write(process.versions.node)</script> 
+        Chrome: <script>document.write(process.versions.chrome)</script> 
+        Electron: <script>document.write(process.versions.electron)</script></p>
+      </div>
+    </div>
   </body>
   <footer>
-    <p>Node: <script>document.write(process.versions.node)</script> Chrome: <script>document.write(process.versions.chrome)</script> Electron: <script>document.write(process.versions.electron)</script></p>
   </footer>
 </html>

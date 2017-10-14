@@ -2,7 +2,8 @@
     "name": "MiddReg",
     "dependencies": {
         "bootstrap": "^3.3.7",
-        "electron": "^1.8.1"
+        "electron": "^1.8.1",
+        "selenium-webdriver": "^3.6.0"
     },
     "scripts": {
         "start": "npm run build && electron .",

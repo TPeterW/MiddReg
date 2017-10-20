@@ -3,7 +3,8 @@
     "dependencies": {
         "bootstrap": "^3.3.7",
         "electron": "^1.8.1",
-        "selenium-webdriver": "^3.6.0"
+        "selenium-webdriver": "^3.6.0",
+        "webdriverio": "^4.8.0"
     },
     "scripts": {
         "start": "npm run build && electron .",
@@ -15,6 +16,8 @@
     "description": "Course registration tool for Middlebury College Bannerweb system",
     "author": "Tao Peter Wang",
     "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
         "compass": "^0.1.1",
         "node-sass": "^4.5.3",
         "nodemon": "^1.12.1"
